@@ -40,12 +40,24 @@ int main(void){
 		
 		
 		if(kode==111){
+			
 		int a=1700, b=2060, c=5880;
-		printf("Masukkan pemakaian bulan ini (M3) : ");
-		scanf("%d", &debit1);
-		printf("Masukkan pemakaian bulan lalu (M3) : ");
-		scanf("%d", &debit2);
-		debit = debit1-debit2;
+		
+		do{
+			printf("Masukkan pemakaian bulan ini (M3) : ");
+			scanf("%d", &debit1);
+			printf("Masukkan pemakaian bulan lalu (M3) : ");
+			scanf("%d", &debit2);
+			system("clear");
+			if(!debit1 || !debit2){
+				printf("input salah");
+				system("pause");
+			}
+			fflush(stdin);
+			system("clear");
+		}while(!debit1 || !debit2);
+		
+		debit = debit1-debit2;	
 			if(debit >=0 && debit <=10){
 			hasil=debit*a;
 			} else if(debit >=11 && debit <=20){
@@ -54,11 +66,23 @@ int main(void){
 			hasil=debit*c;
 			}
 		} else if(kode==112){
+			
 		int a=2060, b=2340, c=5940;
-		printf("Masukkan pemakaian bulan ini (M3) : ");
-		scanf("%d", &debit1);
-		printf("Masukkan pemakaian bulan lalu (M3) : ");
-		scanf("%d", &debit2);
+		
+		do{
+			printf("Masukkan pemakaian bulan ini (M3) : ");
+			scanf("%d", &debit1);
+			printf("Masukkan pemakaian bulan lalu (M3) : ");
+			scanf("%d", &debit2);
+			system("clear");
+			if(!debit1 || !debit2){
+				printf("input salah");
+				system("pause");
+			}
+			fflush(stdin);
+			system("clear");
+		}while(!debit1 || !debit2);
+		
 		debit = debit1-debit2;
 			if(debit >=0 && debit <=10){
 				hasil=debit*a;
@@ -68,11 +92,22 @@ int main(void){
 				hasil=debit*c;
 			}
 		} else if(kode==121){
+			
 		int a=2340, b=2620, c=6000;
-		printf("Masukkan pemakaian bulan ini (M3) : ");
-		scanf("%d", &debit1);
-		printf("Masukkan pemakaian bulan lalu (M3) : ");
-		scanf("%d", &debit2);
+		do{
+			printf("Masukkan pemakaian bulan ini (M3) : ");
+			scanf("%d", &debit1);
+			printf("Masukkan pemakaian bulan lalu (M3) : ");
+			scanf("%d", &debit2);
+			system("clear");
+			if(!debit1 || !debit2){
+				printf("input salah");
+				system("pause");
+			}
+			fflush(stdin);
+			system("clear");
+		}while(!debit1 || !debit2);
+		
 		debit = debit1-debit2;
 			if(debit >=0 && debit <=10){
 				hasil=debit*a;
@@ -82,11 +117,23 @@ int main(void){
 				hasil=debit*c;
 			}
 		} else if(kode==122){
+			
 		int a=2620, b=2900, c=6060;
-		printf("Masukkan pemakaian bulan ini (M3) : ");
-		scanf("%d", &debit1);
-		printf("Masukkan pemakaian bulan lalu (M3) : ");
-		scanf("%d", &debit2);
+		
+		do{
+			printf("Masukkan pemakaian bulan ini (M3) : ");
+			scanf("%d", &debit1);
+			printf("Masukkan pemakaian bulan lalu (M3) : ");
+			scanf("%d", &debit2);
+			system("clear");
+			if(!debit1 || !debit2){
+				printf("input salah");
+				system("pause");
+			}
+			fflush(stdin);
+			system("clear");
+		}while(!debit1 || !debit2);
+		
 		debit = debit1-debit2;
 			if(debit >=0 && debit <=10){
 				hasil=debit*a;
@@ -96,11 +143,23 @@ int main(void){
 				hasil=debit*c;
 			}
 		} else if(kode==131){
+			
 		int a=2900, b=3180, c=6180;
-		printf("Masukkan pemakaian bulan ini (M3) : ");
-		scanf("%d", &debit1);
-		printf("Masukkan pemakaian bulan lalu (M3) : ");
-		scanf("%d", &debit2);
+		
+		do{
+			printf("Masukkan pemakaian bulan ini (M3) : ");
+			scanf("%d", &debit1);
+			printf("Masukkan pemakaian bulan lalu (M3) : ");
+			scanf("%d", &debit2);
+			system("clear");
+			if(!debit1 || !debit2){
+				printf("input salah");
+				system("pause");
+			}
+			fflush(stdin);
+			system("clear");
+		}while(!debit1 || !debit2);
+		
 		debit = debit1-debit2;
 			if(debit >=0 && debit <=10){
 				hasil=debit*a;
@@ -110,11 +169,23 @@ int main(void){
 				hasil=debit*c;
 			}
 		} else if(kode==132){
-			int a=3180, b=3460, c=6180;
-		printf("Masukkan pemakaian bulan ini (M3) : ");
-		scanf("%d", &debit1);
-		printf("Masukkan pemakaian bulan lalu (M3) : ");
-		scanf("%d", &debit2);
+			
+		int a=3180, b=3460, c=6180;
+		
+		do{
+			printf("Masukkan pemakaian bulan ini (M3) : ");
+			scanf("%d", &debit1);
+			printf("Masukkan pemakaian bulan lalu (M3) : ");
+			scanf("%d", &debit2);
+			system("clear");
+			if(!debit1 || !debit2){
+				printf("input salah");
+				system("pause");
+			}
+			fflush(stdin);
+			system("clear");
+		}while(!debit1 || !debit2);
+		
 		debit = debit1-debit2;
 			if(debit >=0 && debit <=10){
 				hasil=debit*a;
@@ -124,11 +195,23 @@ int main(void){
 				hasil=debit*c;
 			}
 		} else if(kode==141){
+			
 		int a=3460, b=3740, c=6240;
-		printf("Masukkan pemakaian bulan ini (M3) : ");
-		scanf("%d", &debit1);
-		printf("Masukkan pemakaian bulan lalu (M3) : ");
-		scanf("%d", &debit2);
+		
+		do{
+			printf("Masukkan pemakaian bulan ini (M3) : ");
+			scanf("%d", &debit1);
+			printf("Masukkan pemakaian bulan lalu (M3) : ");
+			scanf("%d", &debit2);
+			system("clear");
+			if(!debit1 || !debit2){
+				printf("input salah");
+				system("pause");
+			}
+			fflush(stdin);
+			system("clear");
+		}while(!debit1 || !debit2);
+		
 		debit = debit1-debit2;
 			if(debit >=0 && debit <=10){
 				hasil=debit*a;
@@ -138,11 +221,23 @@ int main(void){
 				hasil=debit*c;
 			}
 		} else if(kode==142){
+			
 		int a=3740, b=4020, c=6300;
-		printf("Masukkan pemakaian bulan ini (M3) : ");
-		scanf("%d", &debit1);
-		printf("Masukkan pemakaian bulan lalu (M3) : ");
-		scanf("%d", &debit2);
+		
+		do{
+			printf("Masukkan pemakaian bulan ini (M3) : ");
+			scanf("%d", &debit1);
+			printf("Masukkan pemakaian bulan lalu (M3) : ");
+			scanf("%d", &debit2);
+			system("clear");
+			if(!debit1 || !debit2){
+				printf("input salah");
+				system("pause");
+			}
+			fflush(stdin);
+			system("clear");
+		}while(!debit1 || !debit2);
+		
 		debit = debit1-debit2;
 			if(debit >=0 && debit <=10){
 				hasil=debit*a;
