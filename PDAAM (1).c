@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(void){
-	int bpm, jumlah, hasil, denda, administrasi;
+	int bpm, jumlah, hasil, denda, denda_total, administrasi;
 	int tanggal1, tanggal2;
 
 	void menu_awal();
