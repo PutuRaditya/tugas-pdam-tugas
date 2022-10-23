@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(void){
-	int bpm, jumlah, hasil, denda, administrasi, denda_total;
+	int bpm, jumlah, hasil, denda, administrasi;
 	int tanggal1, tanggal2;
 
 	void menu_awal();
@@ -188,9 +188,9 @@ int main(void){
 			hasil=debit*c;
 			}
 		if(tanggal1>tanggal2){
-			denda_total=hasil*denda;
+			denda=0.2*hasil;
 		}	
-		hasil+=administrasi+denda_total;
+		hasil+=administrasi+denda;
 		
 		} else if(kode==131){
 			
@@ -225,9 +225,9 @@ int main(void){
 			hasil=debit*c;
 			}
 		if(tanggal1>tanggal2){
-			denda_total=hasil*denda;
+			denda=0.2*hasil;
 		}	
-		hasil+=administrasi+denda_total;
+		hasil+=administrasi+denda;
 		
 		} else if(kode==132){
 			
@@ -262,9 +262,9 @@ int main(void){
 			hasil=debit*c;
 			}
 		if(tanggal1>tanggal2){
-			denda_total=hasil*denda;
+			denda=0.2*hasil;
 		}	
-		hasil+=administrasi+denda_total;
+		hasil+=administrasi+denda;
 		
 		} else if(kode==141){
 			
@@ -299,9 +299,9 @@ int main(void){
 			hasil=debit*c;
 			}
 		if(tanggal1>tanggal2){
-			denda_total=hasil*denda;
+			denda=0.2*hasil;
 		}	
-		hasil+=administrasi+denda_total;
+		hasil+=administrasi+denda;
 		
 		} else if(kode==142){
 			
