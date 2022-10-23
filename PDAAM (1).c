@@ -2,7 +2,11 @@
 #include <stdlib.h>
 
 int main(void){
+
 	int bpm, jumlah, hasil, administrasi;
+
+	int bpm, jumlah, hasil;
+
 	int tanggal1, tanggal2;
 
 	void menu_awal();
@@ -12,7 +16,6 @@ int main(void){
 	int  debit, debit1, debit2;
 	
 	administrasi=2000;
-
 	
 	do{
 		menu_awal();
