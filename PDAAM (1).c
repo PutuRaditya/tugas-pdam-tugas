@@ -5,8 +5,6 @@ int main(void){
 
 	int bpm, jumlah, hasil, administrasi;
 
-	int bpm, jumlah, hasil;
-
 	int tanggal1, tanggal2;
 
 	void menu_awal();
