@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 int main(void){
-	int bpm, jumlah, hasil, administrasi, denda_total;
+	int bpm, jumlah, hasil, denda, administrasi, denda_total;
 	int tanggal1, tanggal2;
-	float denda;
+
 	void menu_awal();
 	void golongan1();
 	void golongan2();
@@ -12,7 +12,6 @@ int main(void){
 	int  debit, debit1, debit2;
 	
 	administrasi=2000;
-	denda=20.00/100.00;
 
 	
 	do{
@@ -78,9 +77,9 @@ int main(void){
 			hasil=debit*c;
 			}
 		if(tanggal1>tanggal2){
-			denda_total=hasil*denda;
+			denda=0.2*hasil;
 		}	
-		hasil+=administrasi+denda_total;
+		hasil+=administrasi+denda;
 			
 		} else if(kode==112){
 			
@@ -103,7 +102,7 @@ int main(void){
 			}
 			fflush(stdin);
 			system("clear");
-		
+			
 		}while(!debit1 || !debit2 || !tanggal1||!tanggal2 ||tanggal1,tanggal2<=0||tanggal1,tanggal2>31 ||debit<0);
 		
 		debit = debit1-debit2;
@@ -115,9 +114,9 @@ int main(void){
 			hasil=debit*c;
 			}
 		if(tanggal1>tanggal2){
-			denda_total=hasil*denda;
+			denda=0.2*hasil;
 		}	
-		hasil+=administrasi+denda_total;
+		hasil+=administrasi+denda;
 		
 		} else if(kode==121){
 			
@@ -152,9 +151,9 @@ int main(void){
 			hasil=debit*c;
 			}
 		if(tanggal1>tanggal2){
-			denda_total=hasil*denda;
+			denda=0.2*hasil;
 		}	
-		hasil+=administrasi+denda_total;
+		hasil+=administrasi+denda;
 		
 		} else if(kode==122){
 			
@@ -755,7 +754,7 @@ int main(void){
 	printf("|-----------------------------------------------------------------------|\n");
 	printf("|   BPM     |   Tarif Air   |   Denda  |   Administrasi   |    Total    |\n");
 	printf("|-----------------------------------------------------------------------|\n");
-	printf("|   %d    |  %d        |    %.2f   |     %d     |    %d       |\n", bpm, hasil,denda,administrasi,jumlah);
+	printf("|   %d    |  %d        |    %d   |     %d     |    %d       |\n", bpm, hasil,denda,administrasi,jumlah);
 	printf("|-----------------------------------------------------------------------|\n");
 	
 	return 0;
