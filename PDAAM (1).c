@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+int denda(int input);
+
 int main(void){
 	int bpm, jumlah, hasil, administrasi;
 	int tanggal1, tanggal2;
